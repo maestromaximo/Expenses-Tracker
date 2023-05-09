@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTextViewDashboard"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="748dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recordDashTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/foodDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="521dp"
+        android:text="Food"
+        app:layout_constraintBottom_toTopOf="@+id/recordDashTextView"
+        app:layout_constraintEnd_toStartOf="@+id/personalDashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/personalDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="4dp"
+        android:text="Personal"
+        app:layout_constraintBottom_toTopOf="@+id/personalDashEditField"
+        app:layout_constraintEnd_toStartOf="@+id/transportDashButton"
+        app:layout_constraintStart_toEndOf="@+id/foodDashButton" />
+
+    <Button
+        android:id="@+id/transportDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginBottom="516dp"
+        android:text="Transport"
+        app:layout_constraintBottom_toTopOf="@+id/resetDashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/personalDashButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/investDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Invest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/savingsDashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savingsDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Savings"
+        app:layout_constraintEnd_toStartOf="@+id/taxesDashButton"
+        app:layout_constraintStart_toEndOf="@+id/investDashButton"
+        app:layout_constraintTop_toTopOf="@+id/investDashButton" />
+
+    <Button
+        android:id="@+id/taxesDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxes"
+        app:layout_constraintBottom_toTopOf="@+id/savingsDashEditField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/savingsDashButton" />
+
+    <Button
+        android:id="@+id/homeDashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="@+id/homeDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/savingsDashTextView" />
+
+    <TextView
+        android:id="@+id/foodDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/investDashButton"
+        app:layout_constraintStart_toStartOf="@+id/foodDashEditField" />
+
+    <TextView
+        android:id="@+id/personalDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/personalDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/personalDashEditField" />
+
+    <TextView
+        android:id="@+id/transportDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/taxesDashButton"
+        app:layout_constraintEnd_toEndOf="@+id/transportDashEditField" />
+
+    <TextView
+        android:id="@+id/investDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="14dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/investDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/investDashButton" />
+
+    <TextView
+        android:id="@+id/savingsDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/savingsDashEditField"
+        app:layout_constraintTop_toTopOf="@+id/investDashTextView" />
+
+    <TextView
+        android:id="@+id/taxesDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/taxesDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/taxesDashEditField" />
+
+    <TextView
+        android:id="@+id/homeDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/homeDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/homeDashButton" />
+
+    <EditText
+        android:id="@+id/investDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/savingsDashEditField"
+        app:layout_constraintEnd_toStartOf="@+id/savingsDashEditField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/investDashButton" />
+
+    <EditText
+        android:id="@+id/savingsDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/savingsDashTextView"
+        app:layout_constraintEnd_toStartOf="@+id/taxesDashEditField"
+        app:layout_constraintStart_toEndOf="@+id/investDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/savingsDashButton" />
+
+    <EditText
+        android:id="@+id/taxesDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/savingsDashEditField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/savingsDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/taxesDashButton" />
+
+    <EditText
+        android:id="@+id/foodDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAllCaps="false"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/foodDashTextView"
+        app:layout_constraintEnd_toStartOf="@+id/personalDashEditField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodDashButton" />
+
+    <EditText
+        android:id="@+id/personalDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/foodDashEditField"
+        app:layout_constraintEnd_toStartOf="@+id/transportDashEditField"
+        app:layout_constraintStart_toEndOf="@+id/foodDashEditField"
+        app:layout_constraintTop_toTopOf="@+id/transportDashEditField" />
+
+    <EditText
+        android:id="@+id/transportDashEditField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/transportDashTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/personalDashEditField"
+        app:layout_constraintTop_toBottomOf="@+id/transportDashButton" />
+
+    <EditText
+        android:id="@+id/homeDashEditField"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/homeDashTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeDashButton" />
+
+    <TextView
+        android:id="@+id/generalDashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:text="0$"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/personalDashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetDashButton"
+        android:layout_width="69dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="40dp"
+        android:text="RES"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toEndOf="@+id/recordDashTextView" />
+
+    <TextView
+        android:id="@+id/recordDashTextView"
+        android:layout_width="68dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="40dp"
+        android:text="last Week"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
